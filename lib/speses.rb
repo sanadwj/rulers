@@ -1,11 +1,11 @@
 # frozen_string_literal: true
-require_relative "rulers/version"
-require "rulers/routing"
-require "rulers/util"
-require "rulers/dependencies"
-require "rulers/controller"
+require_relative "speses/version"
+require "speses/routing"
+require "speses/util"
+require "speses/dependencies"
+require "speses/controller"
 
-module Rulers
+module Speses
   class Application
     def call(env)
       if env['PATH_INFO'] == '/favicon.ico'

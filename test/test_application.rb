@@ -1,11 +1,11 @@
 require_relative 'test_helper'
 
-class TestApp < Rulers::Application
+class TestApp < Speses::Application
 
 end
 
 
-class RulersAppTest < Test::Unit::TestCase
+class SpesesAppTest < Test::Unit::TestCase
   include Rack::Test::Methods
 
   def app

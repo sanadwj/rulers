@@ -1,6 +1,6 @@
 require 'erubis'
 
-module Rulers
+module Speses
   class Controller
     def initialize(env)
       @env = env
@@ -13,7 +13,7 @@ module Rulers
     def controller_nam
       klass = self.class
       klass = klass.to_s.gsub(/Controller$/,"")
-      Rulers.to_underscore(klass)
+      Speses.to_underscore(klass)
     end
 
     def render(view_name, locals = {})

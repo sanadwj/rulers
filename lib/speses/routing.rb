@@ -1,4 +1,4 @@
-module Rulers
+module Speses
   class Application
     def get_controller_and_action(env)
       _, cont, action, after = env["PATH_INFO"].split('/',4)
