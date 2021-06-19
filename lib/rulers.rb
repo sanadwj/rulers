@@ -3,6 +3,7 @@ require_relative "rulers/version"
 require "rulers/routing"
 require "rulers/util"
 require "rulers/dependencies"
+require "rulers/controller"
 
 module Rulers
   class Application
@@ -20,15 +21,6 @@ module Rulers
     end
   end
 
-  class Controller
-    def initialize(env)
-      @env = env
-    end
-
-    def env
-      @env
-    end
-  end
-end
+ end
 
 
