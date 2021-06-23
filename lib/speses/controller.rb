@@ -20,7 +20,7 @@ module Speses
       filename = File.join "app", "views",controller_nam, "#{view_name}.html.erb"
       template = File.read(filename)
       eruby = Erubis::Eruby.new(template)
-      eruby.result locals.merge(:env => env)
+      eruby.result locals.merge(:env => env, :controller_nam => controller_nam)
     end
   end
 
