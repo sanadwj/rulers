@@ -4,6 +4,7 @@ require "speses/routing"
 require "speses/util"
 require "speses/dependencies"
 require "speses/controller"
+require "speses/file_model"
 
 module Speses
   class Application
